@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  font-family: 'Bebas Neue' 'Roboto Condensed', sans-serif;
+}
+header {
+  display: flex;
+  background: linear-gradient(50deg, #1d3461, #1f487e);
+}
+
+.minitrain,
+.logo {
+  margin: 2vh;
+}
+
+.logo img,
+.minitrain {
+  width: 30%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+li {
+  flex: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  background: #376996;
+  padding: 2rem 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+li:hover {
+  background: #829cbc;
+  transition: 0.5s;
+}
+
+.carousel {
+  width: 80%;
+  padding: 2rem;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin: 2rem auto;
+  background-color: #1d346190;
+}
+
+.exemple{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+ 
+
+
+.text {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 2rem;
+  margin: 2rem auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #6290c8;
+  line-height: 1.8rem;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(50deg, #1d3461, #1f487e);
+  line-height: 2.5rem;
+  color: black;
+}
+
+
+/*--------------Trains--------------------*/
+/*!! Je met ici les div pour les "sells" a voir mettre dans un fichier individuel après pour que cela soit plus clair*/
+.sell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sell-details {
+  background: #6290c8;
+}
